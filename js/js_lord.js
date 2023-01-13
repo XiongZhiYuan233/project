@@ -28,6 +28,33 @@ tool_bar.onclick = function () {tb_c()};
         tool_bar[0].classList.remove('NAV_3-');
 }
 
+function web(x){
+    if(x == 1){
+        location.href = "../index.html";
+    }
+    if(x == 2){
+        location.href = "/html/lord.html";
+    }
+    if(x == 3){
+        location.href = "/html/heji.html";
+    }
+    if(x == 4){
+        location.href = "/html/szx.html";
+    }
+    if(x == 5){
+        location.href = "/html/xmyrz.html";
+    }
+    if(x == 6){
+        location.href = "/html/hzs.html";
+    }
+    if(x == 7){
+        location.href = "/html/whyq.html";
+    }
+    if(x == 8){
+        location.href = "/html/baogao.html";
+    }
+}
+
 // window.onscroll = function() {
 //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 //     b1.style.opacity='1';

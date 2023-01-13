@@ -60,27 +60,30 @@
 	</style>
 
 </head>
+
 <div class="nav">
 	<div><img src="/img/ELYSIA.png" alt="图片损坏" width="50px"></div>
 	<div class="nav_1">
 		<div class="partition">
-			<div class="btn"><ion-icon name="home-outline"></ion-icon>主页</div>
+			<div class="btn" onclick="web(1)"><ion-icon name="home-outline"></ion-icon>主页</div>
 			<div class="btn" id="BTN2">
 				子页
 				<div class="btn_1" style="padding: 0;">
-					<div style="padding: 10px 0;">页面1</div>
-					<div style="padding: 10px 0;">页面1</div>
-					<div style="padding: 10px 0;">页面1</div>
-					<div style="padding: 10px 0;">页面1</div>
-					<div style="padding: 10px 0;">页面1</div>
-					<div style="padding: 10px 0;">页面1</div>
+					<div style="padding: 10px 0;" onclick="web(2)">页面1</div>
+					<div style="padding: 10px 0;" onclick="web(3)">页面2</div>
+					<div style="padding: 10px 0;" onclick="web(4)">页面3</div>
+					<div style="padding: 10px 0;" onclick="web(5)">页面4</div>
+					<div style="padding: 10px 0;" onclick="web(6)">页面5</div>
+					<div style="padding: 10px 0;" onclick="web(7)">页面6</div>
 				</div>
 			</div>
-			
+			<div style="cursor: pointer;" onclick="web(8)">报告</div>
 			<div class="btn" onclick="tb_cc()"><ion-icon name="chevron-up-outline" style="font-size: larger;position: relative;top:10%"></ion-icon></div>
 	</div>
 	</div>
 </div>
+
+
 <div class="toolBar"><div style="width: 100%;" onclick="tb_c()"><ion-icon name="chevron-down-outline"></ion-icon></div></div>
 <body>
 	<!--
