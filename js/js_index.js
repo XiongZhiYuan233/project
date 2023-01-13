@@ -132,27 +132,27 @@ function my_music(x){
 
 function web(x){
     if(x == 1){
-        location.href = "/index.html";
+        location.href = "index.html";
     }
     if(x == 2){
-        location.href = "/html/lord.html";
+        location.href = "html/lord.html";
     }
     if(x == 3){
-        location.href = "/html/heji.html";
+        location.href = "html/heji.html";
     }
     if(x == 4){
-        location.href = "/html/szx.html";
+        location.href = "html/szx.html";
     }
     if(x == 5){
-        location.href = "/html/xmyrz.html";
+        location.href = "html/xmyrz.html";
     }
     if(x == 6){
-        location.href = "/html/hzs.html";
+        location.href = "html/hzs.html";
     }
     if(x == 7){
-        location.href = "/html/whyq.html";
+        location.href = "html/whyq.html";
     }
     if(x == 8){
-        location.href = "/html/baogao.html";
+        location.href = "html/baogao.html";
     }
 }

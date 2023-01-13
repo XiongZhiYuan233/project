@@ -154,7 +154,7 @@
 
 /* page1 */
 #page1{
-    background: url(/img/aeml_2.jpeg);
+    background: url(../img/aeml_2.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -221,7 +221,7 @@
 /* page2 */
 #page2{
     position: relative;
-    background: url(/img/wb.png);
+    background: url(../img/wb.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -246,7 +246,7 @@
 /* page3 */
 #page3{
     position: relative;
-    background: url(/img/Graytan.png);
+    background: url(../img/Graytan.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
