@@ -43,8 +43,27 @@
     grid-template-columns: 6vw 31vw 6vw 31vw 6vw;
     grid-template-rows:4vh 30vh 4vh 30vh 4vh 30vh 4vh 30vh 4vh;
 }
+.attach{
+    /* border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    position: relative;
+    width:96%;
+    color: #BFBFBF;
+    text-align: center;
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,.6));
 
+    bottom: 75px;
+    padding-top: 50px;
+    transition: all .5s linear; */
+    bottom: 15%;
+    left: 10%;
+    opacity: .7;
+    position: absolute;
+    border-left: 4px solid #1895a3;
+    color: #2C2E00;
+}
 #content_1_1{
+    position: relative;
     background-color: #fff;
 }
 .l_1{
@@ -57,31 +76,38 @@
 
 #content_1_2{
     background-color: rgba(135, 199, 255, 0.75);
+    position: relative;
 }
 
 #content_1_3{
     background-color: rgba(36, 37, 37, 0.75);
     transition: .5s;
+    position: relative;
 }
 #content_1_4{
     background-color: rgba(86, 85, 87, 0.75);
     transition: .5s;
+    position: relative;
 }
 #content_1_5{
     background-color: rgba(0, 0, 0, 0.75);
     transition: .5s;
+    position: relative;
 }
 #content_1_6{
     background-color: rgba(172, 173, 174, 0.75);
     transition: .5s;
+    position: relative;
 }
 #content_1_7{
     background-color: rgb(238, 238, 238,0.75);
     transition: .5s;
+    position: relative;
 }
 #content_1_8{
     background-color: rgba(44, 49, 54, 0.75);
     transition: .5s;
+    position: relative;
 }
 
 
