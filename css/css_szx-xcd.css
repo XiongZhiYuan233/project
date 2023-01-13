@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-image: url(/img/szx-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 主体 */
+.cover{
+    box-shadow: 0px 6px 5px  #1212124d;
+    width: 100%;
+}
+.main{
+    margin-top: -.3%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+}
+.main_1{
+    width: 100%;
+    padding: 20px 30px;
+    background-color: rgba(249, 233, 251, 0.7);
+    box-shadow: 0px 0px 50px 5px black;
+    border-radius: 10px;
+    position: relative;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 800;
+    overflow: visible;
+    color: rgb(174, 158, 181);
+}
+.br{
+    margin:15px 0px;
+    border-top: .5px solid rgba(0, 0, 0, 0.202);
+}
+.before_1{
+    width: 6px;
+    height: 35px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    float: left;
+    clear: both;
+    margin-right: 5px;
+}
+.before_2{
+    width: 5px;
+    height: 20px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    float: left;
+    clear: both;
+    margin-right: 5px;
+}
+
+.content_1 div:nth-child(3){
+    font-size: 95%;
+    font-weight: 100;
+}
+.myHeadline{
+    font-size: 1.5rem;
+    font-weight: 540;
+    color: rgb(152, 162, 157);
+}
+/* 侧边栏 */
+.sideBar{
+    position: relative;
+    margin-left: 30%;
+}
+.sideBar-content{
+    position: sticky;
+    top:25%;
+    height: 15%;
+    width: 70%;
+    background-color: rgba(153, 205, 50, 0.9);
+    box-shadow: 0 0 50px 10px rgba(54, 53, 53, 0.853);
+    border-radius: 15px;
+    padding: 30px 20px 10px 20px;
+}
+.myHeadline-2{
+    font-size: 1.2rem;
+    font-weight: 540;
+    color: rgb(240, 255, 130);
+}
+.myHeadline-2-main{
+    overflow: auto;
+}
+.myHeadline-2-main li a{
+    text-decoration: none;
+    color: #000;
+}
+.myHeadline-2-main li{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.myHeadline-2-main li:nth-child(3n+1){
+    border-left: 5px solid rgba(228, 247, 88, 0.75);
+    padding-left: 5%;
+}
+.myHeadline-2-main li:nth-child(3n+2){
+    border-left: 5px solid rgba(153, 159, 239, 0.75);
+    padding-left: 5%;
+}
+.myHeadline-2-main li:nth-child(3n){
+    border-left: 5px solid rgba(111, 244, 170, 0.75);
+    padding-left: 5%;
+}
+.catalog-active{
+    background-color: rgb(0, 0, 0);
+}
+
+/* 页脚 */
+footer{
+    margin-top: 300px;
+    background-color: #222222;
+    min-height: 100px;
+    position: relative;
+    padding: 20px 50px;
+}
+.my_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 15px 0px;
+}
+.my_icon li{
+    transition: .5s;
+}
+.my_icon li{
+    margin: 0 10px;
+    transition: .3s;
+    color: #fff;
+}
+.my_icon li:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.miscellaneous_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.miscellaneous_1 li{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 10px;
+}
+.miscellaneous_1 li a{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 10px;
+}
+.miscellaneous_1:hover{
+    cursor: pointer;
+}
+.miscellaneous_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 0 0;
+    color: #fff;
+}
+.miscellaneous_3{
+    position: absolute;
+    top:0;
+}
+.footer_1{
+    margin-top: -5px;
+    min-height: 100px;
+    display: grid;
+    grid-area: 'a b c d';
+    grid-template-columns: 1fr 2fr 2fr 5fr;
+}
+.footer_1_1{
+    color: #fff;
+}
+.footerBr{
+    margin: 7px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}

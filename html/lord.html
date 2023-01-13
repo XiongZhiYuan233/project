@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/js_lord.js"></script>
+    <link rel="stylesheet" href="/css/css_lord.css">
+    <link rel="shortcut icon" href="/img/favicon .ico" />
+    <title>君主·埃尔梅罗二世事件簿</title>
+
+	<!--
+		@time: 2018-08-04
+		@version: 0.0.1
+		@author: Mortal
+		-->
+	<style type="text/css">
+		/*
+		 * 说明：
+		 * 标注为慎删的属性暂时认定可以删除，即在作者测试的环境下删除暂时没有影响，但不代表所有环境下删除都没有影响
+		 * 其他属性一概不可以删除
+		 */
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		body,
+		ul,
+		li,
+		a,
+		p,
+		div {
+			/*慎删*/
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#wrap {
+			overflow: hidden;
+			width: 100%;
+		}
+
+		#main {
+			top: 0;
+			position: relative;
+		}
+
+		.page {
+			/*谨删*/
+			width: 100%;
+			margin: 0;
+		}
+
+		#pageUl {
+			position: fixed;
+			right: 10px;
+		}
+	</style>
+
+</head>
+<div class="nav">
+	<div><img src="/img/ELYSIA.png" alt="图片损坏" width="50px"></div>
+	<div class="nav_1">
+		<div class="partition">
+			<div class="btn"><ion-icon name="home-outline"></ion-icon>主页</div>
+			<div class="btn" id="BTN2">
+				子页
+				<div class="btn_1" style="padding: 0;">
+					<div style="padding: 10px 0;">页面1</div>
+					<div style="padding: 10px 0;">页面1</div>
+					<div style="padding: 10px 0;">页面1</div>
+					<div style="padding: 10px 0;">页面1</div>
+					<div style="padding: 10px 0;">页面1</div>
+					<div style="padding: 10px 0;">页面1</div>
+				</div>
+			</div>
+			
+			<div class="btn" onclick="tb_cc()"><ion-icon name="chevron-up-outline" style="font-size: larger;position: relative;top:10%"></ion-icon></div>
+	</div>
+	</div>
+</div>
+<div class="toolBar"><div style="width: 100%;" onclick="tb_c()"><ion-icon name="chevron-down-outline"></ion-icon></div></div>
+<body>
+	<!--
+		每个全屏页面div的class为page，其中的图片的class为pageImg
+		ul为右侧的导航栏
+		pageUlLi和page的数目必须相等，修改数目时还应修改最下面js鼠标悬停的跳转代码
+		-->
+	<div id="wrap">
+		<div id="main">
+			<ul id="pageUl" type="circle" style="list-style: none;z-index: 100;cursor: default;">
+				<li id="pageUlLi1" class="pageUlLi" style="background-color: aqua;border-radius: 5px;border: .1px solid aqua;margin: 5px 0;">&nbsp;</li>
+				<li id="pageUlLi2" class="pageUlLi" style="border-radius: 5px;border: .1px solid aqua;margin: 5px 0;">&nbsp;</li>
+				<li id="pageUlLi3" class="pageUlLi" style="border-radius: 5px;border: .1px solid aqua;margin: 5px 0;">&nbsp;</li>
+			</ul>
+			<div id="page1" class="page">
+				<div id="block">
+                    <div id="block_1">
+                        <div style="font-size: 30px;font-family:cursive;display: flex;justify-content: center;align-items: center;padding-top:20%;">君主·埃尔梅罗二世事件簿<div style="position: absolute;bottom: 30%;">作者：三田诚</div></div>
+                        
+                    </div>
+                    <div id="block_2" style="height: 100%;padding: 40px;font-family: 'Lucida Calligraphy', cursive, serif, sans-serif;">
+                        <div> (Lord El-Melloi II Case Files)</div>
+                        <div>是由三田诚执笔撰写，坂本みねぢ绘制插画，由TYPE-MOON出版的小说，并有漫画、动画等衍生作品。</div>
+                    </div>
+                </div>
+			</div>
+			<div id="page2" class="page">
+				<div id="block">
+                    <div id="block_1">
+                        <div style="display: flex;justify-content: center;align-items: center;padding-top:20%;font-size: 30px;font-family:cursive;">韦伯·维尔维特<div style="position: absolute;bottom: 30%;">CV：浪川大辅</div></div>
+                    </div>
+                    <div id="block_2" style="padding: 40px;font-family: 'Lucida Calligraphy', cursive, serif, sans-serif;">
+                        <div>原为时钟塔的年轻学生，在被老师肯尼斯否定之后，盗走了肯尼斯的圣遗物，偷偷来到冬木市，召唤出Rider伊斯坎达尔参加了第四次圣杯战争。在圣杯战争中生还，回到时钟塔，成为讲师，继承了埃尔梅罗教室，最终成为传奇人物君主·埃尔梅罗二世。</div>
+                    </div>
+                </div>
+			</div>
+			<div id="page3" class="page">
+				<div id="block">
+                    <div id="block_1">
+                        <div style="display: flex;justify-content: center;align-items: center;padding-top:20%;font-size: 30px;font-family:cursive;">格蕾<div style="position: absolute;bottom: 30%;">CV：上田丽奈</div></div>
+                    </div>
+                    <div id="block_2" style="padding: 40px;font-family: 'Lucida Calligraphy', cursive, serif, sans-serif;">
+                        <div>君主·埃尔梅罗二世的内弟子，助手。
+                            <br>
+                            原本在家乡是一个守墓人，被二世带到了时钟塔。身处魔术的世界却不能算是一个魔术师。
+                            <br>
+                            她是事件簿小说的第一人称叙述者之一。</div>
+                    </div>
+                </div>
+			</div>
+			
+			
+		</div>
+	</div>
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript">
+	//改变窗口大小时调整图片大小
+	window.onload = resizeImages;
+	window.onresize = resizeImages;
+
+	function resizeImages() {
+		$(function (e) {
+			var screenWeight = document.documentElement.clientWidth;
+			var screenHeight = document.documentElement.clientHeight;
+			$("[name=pageImg]").css("width", screenWeight).css("height", screenHeight);
+			$("#pageUl").css("bottom", screenHeight >> 1);
+		});
+	}
+
+	var index = 1;
+	var curIndex = 1;
+	var wrap = document.getElementById("wrap");
+	var main = document.getElementById("main");
+	var hei = document.body.clientHeight;
+	wrap.style.height = hei + "px";
+	var obj = document.getElementsByTagName("div");
+	for (var i = 0; i < obj.length; i++) {
+		if (obj[i].className == 'page') {
+			obj[i].style.height = hei + "px";
+		}
+	}
+	var pageNum = document.querySelectorAll(".page").length;
+	//如果不加时间控制，滚动会过度灵敏，一次翻好几屏
+	var startTime = 0, //翻屏起始时间  
+		endTime = 0,
+		now = 0;
+	//浏览器兼容      
+	if ((navigator.userAgent.toLowerCase().indexOf("firefox") != -1)) {
+		document.addEventListener("DOMMouseScroll", scrollFun, false);
+	} else if (document.addEventListener) {
+		document.addEventListener("mousewheel", scrollFun, false);
+	} else if (document.attachEvent) {
+		document.attachEvent("onmousewheel", scrollFun);
+	} else {
+		document.onmousewheel = scrollFun;
+	}
+
+	//滚动事件处理函数
+	function scrollFun(event) {
+		startTime = new Date().getTime();
+		var delta = event.detail || (-event.wheelDelta);
+		//mousewheel事件中的 “event.wheelDelta” 属性值：返回的如果是正值说明滚轮是向上滚动
+		//DOMMouseScroll事件中的 “event.detail” 属性值：返回的如果是负值说明滚轮是向上滚动
+		if ((endTime - startTime) < -1000) {
+			if (delta > 0 && parseInt(main.offsetTop) > -(hei * (pageNum - 1))) {
+				//向下滚动
+				index++;
+				toPage(index);
+			}
+			if (delta < 0 && parseInt(main.offsetTop) < 0) {
+				//向上滚动
+				index--;
+				toPage(index);
+			}
+			endTime = new Date().getTime();
+		} else {
+			event.preventDefault();
+		}
+	}
+
+	function toPage(index) {
+		//jquery实现动画效果
+		if(index!=curIndex){
+			var delta=index - curIndex;
+			now = now - delta * hei;		
+			$("#main").animate({
+				top: (now + 'px')
+			}, 1000);
+			curIndex = index;
+			//更改列表的选中项
+			$(".pageUlLi").css("background", "none");
+			$("#pageUlLi" + index).css("background", "aqua");
+		}
+	}
+	
+	//鼠标悬停翻页
+	document.getElementById("pageUlLi1").onmouseover = function () {
+		toPage(1);
+	}
+	document.getElementById("pageUlLi2").onmouseover = function () {
+		toPage(2);
+	}
+	document.getElementById("pageUlLi3").onmouseover = function () {
+		toPage(3);
+	}
+	document.getElementById("pageUlLi4").onmouseover = function () {
+		toPage(4);
+	}
+	document.getElementById("pageUlLi5").onmouseover = function () {
+		toPage(5);
+	}
+</script>
+
+</html>

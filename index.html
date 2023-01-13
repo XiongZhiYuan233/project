@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>温馨小站</title>
+        <link rel="shortcut icon" href="/img/favicon .ico" />
+        <link rel="stylesheet" href="css/css_index.css">
+        <script type="text/javascript" src="/js/js_index.js"></script>
+        <style>
+            ::-webkit-scrollbar{
+                width: 7px;
+                background-color: rgba(255, 181, 194, 0.565);
+            }
+            ::-webkit-scrollbar-button{
+                display: none;
+            }
+            ::-webkit-scrollbar-thumb{
+                background-color: rgb(95, 95, 95);
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <div class="nav">
+        <div><img src="/img/ELYSIA.png" alt="图片损坏" width="50px"></div>
+        <div class="nav_1">
+            <div class="partition">
+                <div class="btn" onclick="web(1)"><ion-icon name="home-outline"></ion-icon>主页</div>
+                <div class="btn" id="BTN2">
+                    子页
+                    <div class="btn_1" style="padding: 0;">
+                        <div style="padding: 10px 0;" onclick="web(2)">页面1</div>
+                        <div style="padding: 10px 0;" onclick="web(3)">页面2</div>
+                        <div style="padding: 10px 0;" onclick="web(4)">页面3</div>
+                        <div style="padding: 10px 0;" onclick="web(5)">页面4</div>
+                        <div style="padding: 10px 0;" onclick="web(6)">页面5</div>
+                        <div style="padding: 10px 0;" onclick="web(7)">页面6</div>
+                    </div>
+                </div>
+                <div style="cursor: pointer;" onclick="web(8)">报告</div>
+                <div class="btn" onclick="tb_cc()"><ion-icon name="chevron-up-outline" style="font-size: larger;position: relative;top:10%"></ion-icon></div>
+        </div>
+        </div>
+    </div>
+    <div class="toolBar"><div style="width: 100%;" onclick="tb_c()"><ion-icon name="chevron-down-outline"></ion-icon></div></div>
+    <div id="sco">
+        <body>
+        
+
+            <main>
+                <div class="br">
+                    1
+                </div>
+                <div class="br">
+                    1
+                </div>
+                <div class="content_1">
+                    <div style="margin-right: 2%;">
+    
+                        <div class="block">
+                            <a href="/html/szx.html">
+                                <div style="margin-bottom: -1.3%;">
+                                    <img src="img/SZX.webp" alt="图片损坏">
+                                </div>
+                                <div class="attach" id="a_1">声之形</div>
+                            </a>
+                        </div>
+    
+                        <div class="br">1</div>
+    
+                        <div class="block">
+                            <a href="/html/xcd.html">
+                                <div style="margin-bottom: -1.5%;">
+                                    <img src="img/xcd.gif" alt="图片损坏">
+                                </div>
+                                <div class="attach" id="a_2">我想吃掉你的胰臟</div>
+                            </a>
+                        </div>
+    
+                    </div>
+    
+                    <div class="block">
+                        <a href="/html/lord.html">
+                            <div style="margin-bottom: -.8%;">
+                                <img src="img/aeme.jpeg" alt="图片损坏">
+                            </div>
+                            <div class="attach" id="a_3">君主·埃尔梅罗二世事件簿</div>
+                        </a>
+                    </div>
+    
+                    <div>
+    
+                        <div class="block">
+                            <a href="/html/fate.html">
+                                <div style="margin-bottom: -1.4%;">
+                                    <img src="img/fate.jpeg" alt="图片损坏">
+                                </div>
+                                <div class="attach" id="a_4">Fate:天之杯</div>
+                            </a>
+                        </div>
+    
+                        <div class="br">1</div>
+    
+                        <div style="margin-top:5%" class="block">
+                            <a href="/html/licl.html">
+                                <div style="margin-bottom: -1.4%;">
+                                    <img src="img/lkls.webp" alt="图片损坏">
+                                </div>
+                                <div class="attach" id="a_5">莉可丽丝</div>
+                            </a>
+                        </div>
+    
+                    </div>
+                </div>
+                
+                <div class="content-1">
+                    <div class="block">
+                        <a href="/html/whyq.html">
+                            <div style="margin-bottom: -1.4%;">
+                                <img src="img/whyq-1.jpg" alt="图片损坏">
+                            </div>
+                            <div class="attach" id="a_6">文豪野犬</div>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="/html/xmyrz.html">
+                            <div style="margin-bottom: -1.4%;">
+                                <img src="img/xmyrz.jpg" alt="图片损坏">
+                            </div>
+                            <div class="attach" id="a_7">夏目友人帐</div>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="/html/hzs.html">
+                            <div style="margin-bottom: -1.4%;">
+                                <img src="img/hzs.jpeg" alt="图片损坏">
+                            </div>
+                            <div class="attach" id="a_8">黑执事</div>
+                        </a>
+                    </div>
+                </div>
+            </main>
+    
+    
+            <main style="margin-top: 100px;">
+                <div class="content_2">
+    
+    
+                    <div class="included_1">
+                        <div></div>
+    
+                        <div>
+                            <div class="nav_2">
+                                <div><h2 style="color:aliceblue;font-weight: inherit;">动漫公司</h2></div>
+                                <div style="display: flex;">
+                                    <div style="margin: 0px 10px;">
+                                        <button type="button" id="b1" class="button" onclick="document.getElementById(1).style.display='block';
+                                        document.getElementById(2).style.display='none';
+                                        document.getElementById(3).style.display='none';
+                                        document.getElementById(b1).style.color='#8590A6';
+                                        document.getElementById(b1).style.background='#fff';
+                                        ">京阿尼</button>
+                                    </div>
+                                    <div style="margin: 0px 10px;">
+                                        <button type="button" id="b2" class="button" onclick="document.getElementById(1).style.display='none';
+                                        document.getElementById(2).style.display='block';
+                                        document.getElementById(3).style.display='none';
+                                        document.getElementById(b1).style.color='#8590A6';
+                                        document.getElementById(b1).style.background='#fff';
+                                        ">飞碟社</button>
+                                    </div>
+                                    <div style="margin:0px 10px;">
+                                        <button type="button" id="b3" class="button"onclick="document.getElementById(1).style.display='none';
+                                        document.getElementById(2).style.display='none';
+                                        document.getElementById(3).style.display='block';
+                                        document.getElementById(b1).style.color='#8590A6';
+                                        document.getElementById(b1).style.background='#fff';
+                                        ">骨头社</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="included_1_1" id="1">
+                                <div>
+                                    <div class="included_1_1_1">
+                                        <div>京都动画，又称：京阿尼</div>
+                                        <div>作品包括但不限于如下</div>
+                                    </div>
+                                    <div class="included_1_1_2">
+                                        <ul class="included_1_1_2_1">
+                                            <li>
+                                                <div><img src="/img/SZX2.jpeg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">《声之形》</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2017年9月8日上映</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于bilibili<a href="https://www.bilibili.com/bangumi/play/ep118317?theme=movie&spm_id_from=333.337.0.0" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/zeb.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 6%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">《中二病也要谈恋爱!》</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2012年12月19日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4396-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/xljd.webp" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 6%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">《小林家的龙女仆》</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2012年12月19日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4342-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/qysn.webp" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">《轻音少女》</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2012年12月19日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/702-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/bj.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 4%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">《冰菓》</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2012年12月19日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4398-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/zll.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 4%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">《紫罗兰永恒花园》</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2012年12月19日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/3922-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+    
+                            <div class="included_1_1" style="display: none;" id="2">
+                                <div>
+                                    <div class="included_1_1_1">
+                                        <div>ufotable，又称：飞碟社</div>
+                                        <div>作品包括但不限于如下</div>
+                                    </div>
+                                    <div class="included_1_1_2">
+                                        <ul class="included_1_1_2_1">
+                                            <li>
+                                                <div><img src="/img/fateUBW1.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">fate:UBW</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2014年12月27日完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于bilibili<a href="https://www.bilibili.com/bangumi/play/ep67704?from_spmid=666.25.episode.0&from_outer_spmid=333.337.0.0" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/fateUBW2.webp" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 6%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">fate:UBW第二季</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2015年6月27日完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于bilibili<a href="https://www.bilibili.com/bangumi/play/ep29143?from_spmid=666.25.episode.0&from_outer_spmid=333.337.0.0" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/gmzr.webp" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 4%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">鬼灭之刃</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2019年9月29日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/3126-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/fateHF1.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 6%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">fate:HF</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2017年10月14日上映</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4828-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/fateHF2.jpeg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">fate:HF2</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2019年1月12日上映</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4827-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/fateHF3.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 4%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">fate:HF3</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2020年8月15日上映</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/708-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+    
+                            <div class="included_1_1" style="display: none;" id="3">
+                                <div>
+                                    <div class="included_1_1_1">
+                                        <div>BONES，又称：骨头社</div>
+                                        <div>作品包括但不限于如下</div>
+                                    </div>
+                                    <div class="included_1_1_2">
+                                        <ul class="included_1_1_2_1">
+                                            <li>
+                                                <div><img src="/img/whyq1.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">文豪野犬</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2016年6月22日完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/1083-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/whyq2.jpeg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 6%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">文豪野犬第二季</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2016年12月21日完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/1084-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/whyq3.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 4%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">文豪野犬第三季</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2019年6月28日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/681-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/whyq4.jpeg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 6%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">文豪野犬第四季</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2023年1月4日播出</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/7723-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/hzqyz.jpg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">黑之契约者</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2007年9月28日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4064-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div><img src="/img/lnbfb.jpeg" alt="图片损坏" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0px;height: 100%;"></div>
+                                                <div class="included_1_1_2_1_1" style="padding-top: 4%;">
+                                                    <div style="display: flex;align-items: center;justify-content: center;border-bottom: 1px dashed;">灵能百分百</div>
+                                                    <div style="padding: 10px;">
+                                                        <div style="border-left: 7px solid rgb(103, 233, 245);">于2016年9月26日第一季完结</div>
+                                                        <div style="margin-top: 6px;border-left: 5px solid rgb(106, 128, 130);">现可于樱花动漫<a href="https://odcoc.com/play/4674-1-1.html" target="_blank" style="color: rgb(91, 91, 91);">直接观看</a></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="included_2">
+                        <div class="included_2_1">
+                            <button onclick="my_music(1)">
+                                <ion-icon name="play-outline" class="my_icon_2_1" style="font-size: 20px;display: flex;justify-content: center;position: relative;left: 30%;"></ion-icon>
+                                <ion-icon name="pause-outline" class="my_icon_2_2" style="font-size: 20px;display: none;justify-content: center;position: relative;left: 23%;"></ion-icon>
+                            </button>
+                            <div class="included_2_1_1">
+                                <marquee direction="right">starting the case</marquee>
+                            </div>
+                            <audio src="/music/starting the case.mp3" class="music"></audio>
+                        </div>
+                        <div class="included_2_1">
+                            <button onclick="my_music(2)">
+                                <ion-icon name="play-outline" class="my_icon_2_1" style="font-size: 20px;display: flex;justify-content: center;position: relative;left: 30%;"></ion-icon>
+                                <ion-icon name="pause-outline" class="my_icon_2_2" style="font-size: 20px;display: none;justify-content: center;position: relative;left: 23%;"></ion-icon>
+                            </button>
+                            <div class="included_2_1_1">
+                                <marquee direction="right">廻廻奇譚(come from)</marquee>
+                            </div>
+                            <audio src="/music/廻廻奇譚.mp3" class="music"></audio>
+                        </div>
+                        <div class="included_2_1">
+                            <button onclick="my_music(3)">
+                                <ion-icon name="play-outline" class="my_icon_2_1" style="font-size: 20px;display: flex;justify-content: center;position: relative;left: 30%;"></ion-icon>
+                                <ion-icon name="pause-outline" class="my_icon_2_2" style="font-size: 20px;display: none;justify-content: center;position: relative;left: 23%;"></ion-icon>
+                            </button>
+                            <div class="included_2_1_1">
+                                <marquee direction="right">MYTH & ROID - STYX HELIX</marquee>
+                            </div>
+                            <audio src="/music/MYTH & ROID - STYX HELIX.flac" class="music"></audio>
+                        </div>
+                        <div class="included_2_1">
+                            <button onclick="my_music(4)">
+                                <ion-icon name="play-outline" class="my_icon_2_1" style="font-size: 20px;display: flex;justify-content: center;position: relative;left: 30%;"></ion-icon>
+                                <ion-icon name="pause-outline" class="my_icon_2_2" style="font-size: 20px;display: none;justify-content: center;position: relative;left: 23%;"></ion-icon>
+                            </button>
+                            <div class="included_2_1_1">
+                                <marquee direction="right">only my railgun</marquee>
+                            </div>
+                            <audio src="/music/Machico - only my railgun.mp3" class="music"></audio>
+                        </div>
+                        <div class="included_2_1">
+                            <button onclick="my_music(5)">
+                                <ion-icon name="play-outline" class="my_icon_2_1" style="font-size: 20px;display: flex;justify-content: center;position: relative;left: 30%;"></ion-icon>
+                                <ion-icon name="pause-outline" class="my_icon_2_2" style="font-size: 20px;display: none;justify-content: center;position: relative;left: 23%;"></ion-icon>
+                            </button>
+                            <div class="included_2_1_1">
+                                <marquee direction="right">インフェルノ</marquee>
+                            </div>
+                            <audio src="/music/インフェルノ.mp3" class="music"></audio>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            
+            
+            <div id="top" onclick="topFunction()">
+                <ion-icon name="arrow-up-circle-outline" style="position: absolute;top:10%;left:15%;transition: all .5 ease;" size="large"></ion-icon>
+            </div>
+            
+    
+    
+            
+    
+            <footer style="margin-top: 300px;">
+                <div>
+                    <div class="footer_1">
+                        <div></div>
+                        <div class="footer_1_1">
+                            <span style="font-size: 150%;">网站内容</span>
+                            <div class="footerBr"></div>
+                            <span>介绍部分动漫及动漫公司</span>
+                        </div>
+                    </div>
+                    <ul class="my_icon">
+                        <li><ion-icon name="logo-facebook" size="large"></ion-icon></li>
+                        <li><ion-icon name="logo-twitter" size="large"></ion-icon></li>
+                        <li><ion-icon name="logo-wechat" size="large"></ion-icon></li>
+                        <li><ion-icon name="logo-linkedin" size="large"></ion-icon></li>
+                    </ul>
+                    <ul class="miscellaneous_1">
+                        <li><a href="index.html">Home</a></li>
+                        <li>About</li>
+                        <li>Sevices</li>
+                        <li>Team</li>
+                        <li>Contact</li>
+                    </ul>
+                    <p class="miscellaneous_2">@2023 Online Website | All Rights Reserved</p>
+                    <div class="miscellaneous_3">
+                        <img src="/img/lh.gif" alt="图片损坏" style="width: 30%;">
+                    </div>
+                </div>
+                
+            </footer>
+        </body>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

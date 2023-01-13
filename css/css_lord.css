@@ -1,0 +1,275 @@
+/* 导航 */
+.nav{
+    width:100%;
+    height:50px;
+    background-color: #d9d9d9;
+    opacity:.75;
+    position: fixed;
+    z-index: 99;
+    
+    display:none;
+    direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.NAV_2-{
+    animation: NAV_2 .5s;
+}
+@keyframes NAV_2{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: .75;
+    }
+}
+.NAV_3-{
+    animation: NAV_3 .5s;
+}
+@keyframes NAV_3{
+    0%{
+        opacity: .75;
+    }
+    100%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+.nav_1{
+    width:100%;
+    height:50px;
+    background-color: #d9d9d9;
+    opacity:.75;
+
+    display:flex;
+    direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav div{
+    margin: 0px 10px;
+    color:#121222;
+}
+.partition{
+    display:flex;
+    direction: column;
+}
+.partition div{
+    padding: 10px;
+    background-color: #bfbfbf;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+.partition .btn:hover{
+    transform: translate(-2px,-1px);
+}
+.btn{
+    position: relative;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #bfbfbf;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 1 ease;
+}
+.btn:after,.btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index:-2;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    z-index:1;
+    background:transparent;
+}            
+
+.btn:before {
+    transition: .3s;
+    background-color: #676767;
+    z-index:-1;
+}          
+
+.btn:hover:after,.btn:hover:before {
+    width: 100%;
+}
+@keyframes NAV_1{
+    0%{
+        background-color: #cdcccc;
+        background-size: 0;
+        background-position: 0% 100%;
+}
+    50%{
+        background-color: #cdcccc;
+        background-size: 50%;
+        background-position: 50% 100%;
+    }
+    100%{
+        background-color: #b6b6b8;
+        background-position: 100% 100%;
+}
+}
+
+
+.btn_1{
+    display: none;
+    min-width: 90px;
+    position: absolute;
+    left: -50%;
+    bottom: -260px;
+}
+.btn_1 div{
+    border-radius: 3px;
+    border-top: 1px solid rgba(51, 51, 51, 0.841);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.841);
+}
+.btn_1 div:hover{
+    background-color: #616161af;
+}
+#BTN2:hover .btn_1{
+    display: block;
+}
+/* 工具栏 */
+.toolBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    font-size: 30px;
+    background-color: #cdcccc;
+    color: #979494;
+    width: 35px;
+    height: 35px;
+    border-radius: 0 0 0 5px;
+    cursor: pointer;
+}
+
+/* page1 */
+#page1{
+    background: url(/img/aeml_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+#block{
+    position: absolute;
+    background-color: rgba(139, 137, 137, 0.6);
+    border-radius: 20px;
+    bottom: 15%;
+    left: 10%;
+    width: 30%;
+    height: 30%;
+}
+#block_1{
+    position: absolute;
+    background-color: rgb(139, 137, 137,0.6);
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all .5s ease;
+}
+#block:hover #block_1{
+    cursor: default;
+    opacity: 0;
+    animation: b2_a .5s;
+}
+#block:hover #block_2{
+    display: block;
+}
+#block_2{
+    display: none;
+    height: auto;
+    font-size: 20px;
+}
+#block_2>div>div
+{
+    margin: 3px 0;
+    font-size: large;
+    color: #121222;
+}
+@keyframes b1_a{
+    0%{
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes b2_a{
+    0%{
+        opacity: .75;
+    }
+    100%{
+        transform: translate(-30%,20%);
+        opacity: 0;
+    }
+}
+/* page2 */
+#page2{
+    position: relative;
+    background: url(/img/wb.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#page2 #block{
+    left: 60%;
+}
+#page2 #block:hover #block_1{
+    cursor: default;
+    opacity: 0;
+    animation: b3_a .5s;
+}
+@keyframes b3_a{
+    0%{
+        opacity: .75;
+    }
+    100%{
+        transform: translate(35%,-20%);
+        opacity: 0;
+    }
+}
+/* page3 */
+#page3{
+    position: relative;
+    background: url(/img/Graytan.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#page3 #block{
+    background-color: rgba(139, 137, 137, 0.4);
+    left: 5%;
+    top: 5%;
+}
+#page3 #block_1{
+    background-color: rgb(139, 137, 137,0.1);
+}
+#page3 #block:hover #block_1{
+    cursor: default;
+    opacity: 0;
+    animation: b4_a .5s;
+}
+@keyframes b4_a{
+    0%{
+        opacity: .75;
+    }
+    100%{
+        transform: translate(-35%,-20%);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: dimgray;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+h1,p,td{
+    color: aliceblue;
+}
+#fp{
+    height: 400px;
+    width: 100%;
+}
+table.table1{
+    border-collapse: collapse;
+    width: 100%;
+}
+table.table1 tr:nth-child(2n){
+    background-color:darkgrey;
+}
+table.table1 tr:nth-child(2n+1){
+    background-color: lightgray;
+}
+img{
+    height:200px;
+    width: 100%;
+}
+.table2{
+    margin: auto;
+    
+}
+.table2 td{
+    border-color: darkgray;
+    border-style: dashed;
+    padding:10px;
+    margin: 10px;
+    width: 33.3%;
+}
+.table2 p{
+    text-align: center;
+}
+footer{
+    background-color: beige;
+}
+footer p{
+    color: black;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
